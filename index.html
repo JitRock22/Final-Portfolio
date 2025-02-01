@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="root.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Jit's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <h2 class="logo" id="home">JIT DAS</h2>
+      <div class="nav-items">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="">Education</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact Me</a></li>
+          <li><i class="ri-menu-line"></i></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="hero">
+        <div class="left">
+          <div class="h1">
+            <h3>
+              Hi I am <span>Jit Das</span>
+              <br />
+              "I posses a strong foundation in<br /><span id="element"></span>
+            </h3>
+          </div>
+          <div class="h2">
+            <button class="button-28" role="button">Download CV</button>
+            <button class="button-28" role="button">Contact me</button>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./hero_img1.jpg" alt="" />
+        </div>
+      </div>
+    </main>
+    <!-- **********About Me************ -->
+    <div class="about" id="about">
+      <div class="a-top">
+        <h3><i class="fa-solid fa-address-card"></i> About me</h3>
+      </div>
+      <div class="a-bottom">
+        <div class="a-left">
+            <img src="./about-img.jpg" alt="">
+        </div>
+        <div class="a-right">
+          <div class="about-me">
+            <h5>
+              I'm JIT DAS an
+              <span style="color: #ff4f5a">{Electronics Engineer}</span>
+            </h5>
+            <br />
+            <p>
+              I am a highly motivated
+              <span><b>B.Tech Electronics Engineering</b></span>
+              student with a strong foundation in
+              <b>Data Structures & Algorithms (DSA)</b> and a passion for
+              <b>web development</b>. My expertise lies in building robust and
+              user-friendly Web applications using the MERN stack. I possess
+              coding proficiency in C, C++, and Python, enabling me to tackle
+              diverse programming challenges. I am eager to contribute my skills
+              and enthusiasm to a dynamic and innovative team.<br /><br />
+              My passion for technology drives me to use cutting-edge tools to
+              deliver exceptional results. Outside of coding, I enjoy exploring
+              tech trends, contributing to open-source projects, and reading.<br /><br />
+              Explore my portfolio and let's connect to create something
+              amazing!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ************skills************ -->
+     <div class="skills">
+
+     </div>
+    <!-- **Font Awesome** -->
+    <script
+      src="https://kit.fontawesome.com/b50f9a773f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          'Electronics Engineering"',
+          'Web Developement"',
+          'Data Structure"',
+        ],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
