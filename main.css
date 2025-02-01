@@ -134,3 +134,10 @@
   box-shadow: none;
   transform: translateY(0);
 }
+@media(max-width:400px){
+    .button-28{
+        padding: 1rem;
+        min-height: 5vw;
+        font-size: 3vw;
+    }
+}
