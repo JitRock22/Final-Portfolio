@@ -137,6 +137,9 @@
     border: none;
     border-radius: 10px;
 }
+.message{
+    width: 100%;
+}
 .form-content textarea{
     resize: none;
     height: 5rem;
@@ -162,6 +165,9 @@ textarea::placeholder{
 }
 @media(max-width:600px){
     .name,.email{
+        width: 70%;
+    }
+    .message{
         width: 70%;
     }
 }
