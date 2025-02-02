@@ -50,6 +50,7 @@
   }
   .lang-img {
     gap: 1rem;
+    padding: 3rem;
   }
   .lang-img img {
     height: 8rem;
