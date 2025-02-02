@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 5rem;
   padding-top: 4rem;
+  position: relative;
   background-color: var(--nav_text);
 }
 .left {
@@ -76,19 +77,6 @@
   }
 }
 
-/* CSS */
-.button-82-pushable {
-  position: relative;
-  border: none;
-  background: transparent;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-  transition: filter 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
 
 /* CSS Button*/
 .button-28 {

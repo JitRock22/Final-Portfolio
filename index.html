@@ -8,25 +8,43 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="education.css">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+      </style>
     <title>Jit's Portfolio</title>
   </head>
   <body>
     <nav>
-      <h2 class="logo" id="home">JIT DAS</h2>
-      <div class="nav-items">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#edu">Education</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact Me</a></li>
-          <li><i class="ri-menu-line"></i></li>
+      <h2 class="logo" id="home">JIT DAS
+      </h2>
+      <div class="sidebar">
+        <label for="sidebar-active" class="open-sidebar" aria-expanded="false"><i class="fa-solid fa-bars"></i></label>
+      
+      <div class="nav-items">      
+        <ul class="nav-list">
+          <label for="sidebar-active" class="close-sidebar">
+            <span class="material-symbols-outlined">
+            close
+          </span></label>
+          <li><a href="#" class="nav-links">Home</a></li>
+          <li><a href="#about" class="nav-links">About</a></li>
+          <li><a href="#edu" class="nav-links">Education</a></li>
+          <li><a href="" class="nav-links">Skills</a></li>
+          <li><a href="" class="nav-links">Projects</a></li>
+          <li><a href="" class="nav-links">Contact Me</a></li>
         </ul>
+          
       </div>
     </nav>
     <main>
@@ -89,7 +107,7 @@
       <div class="high-secon"></div>
       <div class="graduation"></div>
      </div> -->
-     <!------EXPERIENCE SECTION------>c
+     <!------EXPERIENCE SECTION------>
 <div class="main-section">
   <div class="container">
     <div class="edu-exp">
@@ -106,7 +124,7 @@
           <div class="experience-content">
             <h2>Higher Secondary Education</h2>
             <h3>Garden Reach Mudiali high School</h3>
-            <p>Acheived 90% overall, reflecting strong academic performance in Scienceg</p>
+            <p>Acheived 90% overall, reflecting strong academic performance in Science</p>
           </div>
         </div>
         <div class="experience-list">
@@ -154,5 +172,11 @@
         loop: true,
       });
     </script>
+    <script>
+      function myFunction(){
+        var x=document.getElementById("");
+      }
+    </script>
+    <script src="func.js"></script>
   </body>
 </html>
