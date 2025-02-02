@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   border: 2px solid red;
+  overflow: hidden;
 }
 .skills h2 {
   font-size: 5rem;
