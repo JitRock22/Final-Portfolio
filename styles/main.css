@@ -111,7 +111,9 @@
 .button-28:disabled {
   pointer-events: none;
 }
-
+.left h2 button a{
+  color: #000;
+}
 .button-28:hover {
   color: #fff;
   background-color: #0b1114;

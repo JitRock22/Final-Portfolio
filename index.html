@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/root.css" />
+    <link rel="stylesheet" href="./styles/contact.css">
     <link rel="stylesheet" href="./styles/skills.css">
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/education.css">
@@ -22,6 +23,24 @@
         'GRAD' 0,
         'opsz' 24
       }
+      /* ***for scroll animation*** */
+      /* @keyframes appear{
+        from{
+          opacity:0;
+          transform: translatex(-200px);
+          clip-path: insert(20% 50% 0 0);
+        }
+        to{
+          opacity: 1;
+          transform: translateX(0px);
+          clip-path: insert(0 0 0 0);
+        }
+      }
+      .block{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      } */
       </style>
     <title>Jit's Portfolio</title>
   </head>
@@ -43,7 +62,7 @@
           <li><a href="#edu" class="nav-links">Education</a></li>
           <li><a href="#skills" class="nav-links">Skills</a></li>
           <li><a href="" class="nav-links">Projects</a></li>
-          <li><a href="" class="nav-links">Contact Me</a></li>
+          <li><a href="#contact" class="nav-links">Contact Me</a></li>
         </ul>
           
       </div>
@@ -60,7 +79,9 @@
           </div>
           <div class="h2">
             <button class="button-28" role="button">Download CV</button>
-            <button class="button-28" role="button">Contact me</button>
+            <a href="#contact">
+              <button class="button-28" role="button">Contact me</button>
+            </a>
           </div>
         </div>
         <div class="right">
@@ -74,10 +95,10 @@
         <h3><i class="fa-solid fa-address-card"></i> About me</h3>
       </div>
       <div class="a-bottom">
-        <div class="a-left">
+        <div class="a-left  ">
             <img src="./images/about-img.jpg" alt="">
         </div>
-        <div class="a-right">
+        <div class="a-right  ">
           <div class="about-me">
             <h5>
               I'm JIT DAS an
@@ -109,20 +130,20 @@
       <h2 class="heading-text" id="edu"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
       <div class="edu-container">
         <div class="experience-list">
-          <div class="experience-content">
+          <div class="experience-content  ">
             <h2>Secondary Education</h2>
             <h3>Garden Reach Mudiali High school</h3>
             <p>Acheived 80% Overall, demostrating a solid academic foundation in core Subjects.</p>
           </div>
         </div>
-        <div class="experience-list">
+        <div class="experience-list  ">
           <div class="experience-content">
             <h2>Higher Secondary Education</h2>
             <h3>Garden Reach Mudiali high School</h3>
             <p>Acheived 90% overall, reflecting strong academic performance in Science</p>
           </div>
         </div>
-        <div class="experience-list">
+        <div class="experience-list  ">
           <div class="experience-content">
             <h2>Graduation</h2>
             <h3>Netaji Subhash Eng. College</h3>
@@ -151,7 +172,7 @@
 <!-- *****Skills Section********* -->
  <div class="skills" id="skills">
   <h2><i class="fas fa-cogs"></i> Skills</h2>
-  <div class="languages">
+  <div class="languages  ">
     <div class="lang1">
       <h3>Languages</h3>
       <div class="lang-img">
@@ -189,6 +210,69 @@
     </div>
   </div>
  </div>
+
+ <!-- *****Contact***** -->
+  <div class="contact" id="contact">
+    <div class="contact-head">
+      <h2><i class="fa-solid fa-handshake"></i> Contact me</h2>
+      <p>Let's connect!
+        I'm always open to discussing new projects and collaborations.<br/>Feel free to reach out using the form below,
+         or connect with me on [LinkedIn/Other Platform].</p>
+    </div>
+   
+    <div class="contact1">
+      <div class="content">
+        <div class="content-info">
+          <div class="content-info1">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4> &nbsp;Address-</h4>
+          </div>
+          <p>Garden Reach, Kolkata</p>
+        </div>
+        <div class="content-info">
+          <div class="content-info1">
+            <i class="fa-solid fa-phone"></i>
+            <h4>&nbsp;Phone No-</h4>
+          </div>
+          <p>704433***2</p>
+        </div>
+        <div class="content-info">
+          <div class="content-info1">
+            <i class="fa-solid fa-envelope"></i>
+            <h4> &nbsp;Email-</h4>
+          </div>
+          <p><a href="malito:jitdas177883@gmail.com">jitdas177883@gmail.com</a></p>
+        </div>
+        <div class="content-info2">
+          <a href="https://www.linkedin.com/in/jit-das-4a90491b9/
+          "><img src="./images/linkdin.png" alt=""></a>
+          <a href="https://github.com/JitRock22"><img src="./images/github1.jpg" alt=""></a>
+          <a href="https://www.facebook.com/profile.php?id=100033901149270"><img src="./images/facebook2.png" alt=""></a>
+        </div>
+       </div>
+      <!-- **contact-Form** -->
+       <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="form-main">
+          <div class="form-title">
+            <h2 style="color: var(--text1);">Get-in-touch</h2>
+            <hr>
+          </div>
+          <!-- 8f9910ae-12bb-4fc5-a4e4-9b79dc904629 -->
+          <div class="form-content">
+            <input type="hidden" name="access_key" value="8f9910ae-12bb-4fc5-a4e4-9b79dc904629">
+
+            <input type="text" name="name" placeholder="Your name" class="name" required>
+            <input type="email" name="email" placeholder="Your Email" class="email" required>
+            <textarea name="message" placeholder="Enter Your Message" class="message" style="height:12rem;width: 100%;
+            padding:1rem; border-radius: 10px; font-family:'Poppins';" required></textarea>
+            <button  class="button-28" type="submit">Submit&nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+         
+        </form>
+       </div>
+    </div>
+
+  </div>
     <!-- **Font Awesome** -->
     <script
       src="https://kit.fontawesome.com/b50f9a773f.js"
